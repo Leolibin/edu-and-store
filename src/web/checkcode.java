@@ -35,7 +35,7 @@ public class checkcode extends HttpServlet {
 		g.setFont(new Font(null,Font.ITALIC,24));
 		//step6,生成一个随机数(验证码)
 		String number = getNumber();
-		//将验证码绑定到session对象里面，用来验证
+		//将验证码绑定到session对象里面，用来验
 		HttpSession session = request.getSession();
 		session.setAttribute("number", number);
 		//将验证码绘制成图片
