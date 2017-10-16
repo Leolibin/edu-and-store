@@ -27,7 +27,7 @@ public class checkcode extends HttpServlet {
 		Graphics g = image.getGraphics();
 		//step3给画笔设置颜色
 		g.setColor(new Color(255,255,255));
-		//step4给画布设置背景颜色
+		//step4给画布设置背景色
 		g.fillRect(0, 0, 90, 30);
 		//step5,重新给画笔设置颜色
 		Random r = new Random();
