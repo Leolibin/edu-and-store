@@ -21,7 +21,7 @@ public class checkcode extends HttpServlet {
 		/*
 		 * 绘图
 		 */
-		//step1内存影像对象画
+		//step1内存影像对象画部分
 		BufferedImage image = new BufferedImage(90,30,BufferedImage.TYPE_INT_RGB);
 		//step2获得画笔
 		Graphics g = image.getGraphics();
@@ -35,7 +35,7 @@ public class checkcode extends HttpServlet {
 		g.setFont(new Font(null,Font.ITALIC,24));
 		//step6,生成一个随机数(验证码)
 		String number = getNumber();
-		//将验证码绑定到session对象里面，用来验
+		//将验证码绑定到session对象里面，用来验证
 		HttpSession session = request.getSession();
 		session.setAttribute("number", number);
 		//将验证码绘制成图片
