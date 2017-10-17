@@ -33,7 +33,7 @@ public class checkcode extends HttpServlet {
 		Random r = new Random();
 		g.setColor(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
 		g.setFont(new Font(null,Font.ITALIC,24));
-		//step6,生成一个随机数(验证码)
+		//step6,生成一个随机数字(验证码)
 		String number = getNumber();
 		//将验证码绑定到session对象里面，用来验
 		HttpSession session = request.getSession();
