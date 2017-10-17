@@ -27,13 +27,13 @@ public class checkcode extends HttpServlet {
 		Graphics g = image.getGraphics();
 		//step3给画笔设置颜色
 		g.setColor(new Color(255,255,255));
-		//step4给画布设置背景色
+		//step4给画布设置背景y颜色
 		g.fillRect(0, 0, 90, 30);
 		//step5,重新给画笔设置颜色
 		Random r = new Random();
 		g.setColor(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
 		g.setFont(new Font(null,Font.ITALIC,24));
-		//step6,生成一个随机数(验证码)
+		//step6,生成一个随机数字(验证码)
 		String number = getNumber();
 		//将验证码绑定到session对象里面，用来验
 		HttpSession session = request.getSession();
