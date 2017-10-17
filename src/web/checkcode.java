@@ -21,7 +21,7 @@ public class checkcode extends HttpServlet {
 		/*
 		 * 绘图
 		 */
-		//step1内存影像对象画
+		//step1内存影像对象画部分
 		BufferedImage image = new BufferedImage(90,30,BufferedImage.TYPE_INT_RGB);
 		//step2获得画笔
 		Graphics g = image.getGraphics();
@@ -33,7 +33,7 @@ public class checkcode extends HttpServlet {
 		Random r = new Random();
 		g.setColor(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
 		g.setFont(new Font(null,Font.ITALIC,24));
-		//step6,生成一个随机数(验证码)
+		//step6,生成了一个随机数(验证码)
 		String number = getNumber();
 		//将验证码绑定到session对象里面，用来验
 		HttpSession session = request.getSession();
@@ -56,7 +56,7 @@ public class checkcode extends HttpServlet {
 		javax.imageio.ImageIO.write(image, "jpeg", ops);
 		ops.close();
 	}
-	//长度为5个字符的验证码（这些字符的要求从A~Z，0~9中选取）
+	//长度为5个字符的验证码（并且这些字符的要求从A~Z，0~9中选取）
 	private String getNumber(){
 		String number = "";
 		String chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
