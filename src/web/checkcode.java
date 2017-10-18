@@ -19,44 +19,44 @@ public class checkcode extends HttpServlet {
 	public void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		/*
-		 * »æÍ¼
+		 * ç»˜å›¾ã€‚
 		 */
-		//step1ÄÚ´æÓ°Ïñ¶ÔÏó»­²¼
+		//step1å†…å­˜å½±åƒå¯¹è±¡ç”»éƒ¨åˆ†
 		BufferedImage image = new BufferedImage(90,30,BufferedImage.TYPE_INT_RGB);
-		//step2»ñµÃ»­±Ê
+		//step2è·å¾—ç”»ç¬”
 		Graphics g = image.getGraphics();
-		//step3¸ø»­±ÊÉèÖÃÑÕÉ«
+		//step3ç»™ç”»ç¬”è®¾ç½®é¢œè‰²
 		g.setColor(new Color(255,255,255));
-		//step4¸ø»­²¼ÉèÖÃ±³¾°ÑÕÉ«
+		//step4ç»™ç”»å¸ƒè®¾ç½®èƒŒæ™¯yé¢œè‰²
 		g.fillRect(0, 0, 90, 30);
-		//step5,ÖØĞÂ¸ø»­±ÊÉèÖÃÑÕÉ«
+		//step5,é‡æ–°ç»™ç”»ç¬”è®¾ç½®é¢œè‰²
 		Random r = new Random();
 		g.setColor(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
 		g.setFont(new Font(null,Font.ITALIC,24));
-		//step6,Éú³ÉÒ»¸öËæ»úÊı(ÑéÖ¤Âë)
+		//step6,ç”Ÿæˆä¸€ä¸ªéšæœºæ•°å­—(éªŒè¯ç )
 		String number = getNumber();
-		//½«ÑéÖ¤Âë°ó¶¨µ½session¶ÔÏóÀïÃæ£¬ÓÃÀ´ÑéÖ¤
+		//å°†éªŒè¯ç ç»‘å®šåˆ°sessionå¯¹è±¡é‡Œé¢ï¼Œç”¨æ¥éªŒè¯
 		HttpSession session = request.getSession();
 		session.setAttribute("number", number);
-		//½«ÑéÖ¤Âë»æÖÆ³ÉÍ¼Æ¬
+		//å°†éªŒè¯ç ç»˜åˆ¶æˆå›¾ç‰‡
 		g.drawString(number, 2, 23);
-		//step7¼ÓÒ»Ğ©¸ÉÈÅÏß
+		//step7åŠ ä¸€äº›å¹²æ‰°çº¿
 		g.drawOval(0, 0, r.nextInt(90), r.nextInt(30));
 		for(int i = 1;i<=8;i++){
 			g.setColor(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
 			g.drawLine(r.nextInt(90), r.nextInt(30),r.nextInt(90), r.nextInt(30));	
 		}
 		/*
-		 * Ñ¹ËõÍ¼Æ¬²¢ÇÒÊä³ö
+		 * å‹ç¼©å›¾ç‰‡å¹¶ä¸”è¾“å‡º
 		 */
-		//ÉèÖÃ·şÎñÆ÷·µ»ØµÄÊı¾İÀàĞÍ£¨Í¼Æ¬£©
+		//è®¾ç½®æœåŠ¡å™¨è¿”å›çš„æ•°æ®ç±»å‹ï¼ˆå›¾ç‰‡ï¼‰
 		response.setContentType("image/jpeg");
 		OutputStream ops = response.getOutputStream();
-		//Ñ¹ËõÍ¼Æ¬²¢Êä³ö
+		//å‹ç¼©å›¾ç‰‡å¹¶è¾“å‡º
 		javax.imageio.ImageIO.write(image, "jpeg", ops);
 		ops.close();
 	}
-	//³¤¶ÈÎª5¸ö×Ö·ûµÄÑéÖ¤Âë£¨ÕâĞ©×Ö·ûµÄÒªÇó´ÓA~Z£¬0~9ÖĞÑ¡È¡£©
+	//é•¿åº¦ä¸º5ä¸ªå­—ç¬¦çš„éªŒè¯ç ï¼ˆè¿™äº›å­—ç¬¦çš„è¦æ±‚ä»A~Zï¼Œ0~9ä¸­é€‰å–ï¼‰
 	private String getNumber(){
 		String number = "";
 		String chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
