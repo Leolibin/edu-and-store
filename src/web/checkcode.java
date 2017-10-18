@@ -19,7 +19,7 @@ public class checkcode extends HttpServlet {
 	public void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		/*
-		 * 绘图
+		 * 绘图。
 		 */
 		//step1内存影像对象画部分
 		BufferedImage image = new BufferedImage(90,30,BufferedImage.TYPE_INT_RGB);
