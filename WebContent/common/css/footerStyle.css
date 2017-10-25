@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-13, 10:52:37
+    Author     : 朱婷婷
+*/
+
+#tmall-copyright {
+    border-top: 2px solid #FF0036;
+    background: #000;
+    text-align: center;
+    min-height: 177px;
+}
+#tmall-copyright .footer-otherlink, #tmall-copyright .footer-tmallinfo {
+    color: #fff;
+    line-height: 25px;
+}
+#tmall-copyright a{
+    color: #fff;
+    text-decoration: none;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+}
+#tmall-copyright a:hover{
+    color: #FF0036;
+    text-decoration: underline;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#footer{
+    text-align: center;
+}
+#tmall-copyright b{
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    color: #a4a4a4;
+}
+#mui-global-fragment-load p{
+    padding-top: 50px;
+}

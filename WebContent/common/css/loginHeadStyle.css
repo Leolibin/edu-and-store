@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-13, 10:51:07
+    Author     : 朱婷婷
+*/
+
+#site-nav {
+    width: auto;
+    height: 26px;
+    position: relative!important;
+    background: #f2f2f2;
+    z-index: 99999;
+    -webkit-transform: translate3d(0,0,0);
+    border-bottom: 1px solid #e5e5e5;
+}
+#site-nav, .mui-top-banner-990 {
+    min-width: 990px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+#site-nav .sn-container, #site-nav a, #site-nav a {
+    color: #999;
+    text-decoration: none;
+}
+
+#site-nav .sn-container , #site-nav a:hover, #site-nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+#site-nav .menu-hd {
+    display: block;
+    height: 26px;
+    cursor: pointer;
+    z-index: 100001;
+    border: solid #f2f2f2;
+    border-width: 0 1px;
+    position: relative;
+}
+#site-nav .sn-quick-menu li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+#site-nav .menu-hd, #site-nav .sn-b, #site-nav .sn-cart, #site-nav .sn-home, #site-nav .sn-login, #site-nav .sn-logout, #site-nav .sn-mobile, #site-nav .sn-mybrand, #site-nav .sn-point, #site-nav .sn-quick-menu .sn-cart, #site-nav .sn-register, #site-nav .sn-seller-center {
+    padding: 0 10px;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    -ms-overflow-style: scrollbar;
+}
+#site-nav .sn-quick-menu {
+    line-height: 26px;
+}
+ol, ul {
+    list-style: none;
+}
+#sn-bd {
+    width: 990px;
+    margin: auto;
+}
+#loginHead_container{
+    overflow:hidden;
+}

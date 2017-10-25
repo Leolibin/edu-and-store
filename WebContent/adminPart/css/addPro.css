@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-13, 11:16:17
+    Author     : Yilia
+*/
+
+
+#first{
+    width: 100%;
+    height: 450px;
+    margin: auto 0;
+}
+#addproductlist{
+    padding: 100px;
+    margin-left: 270px;
+}
+.addfont{
+    font-family: 微软雅黑;
+}
+.addtitlefont{
+    color: #474747;
+}
+#productsubmit{
+    margin-left:525px;
+    margin-top: 50px;
+}
+#second {
+    width: 900px;
+}
