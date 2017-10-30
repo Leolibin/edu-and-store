@@ -14,8 +14,8 @@
         <script src="common/js/jquery-1.7.2.min.js" ></script>
     </head>
     <body>
-        <a href="index">测试</a><br/>
-        <textarea id="editor1" name="editor1">初始化文字</textarea>
+        <a href="login.jsp">测试</a><br/>
+        <textarea id="editor1" name="editor1">初始化文字   </textarea>
         <script type="text/javascript"> CKEDITOR.replace('editor1');</script>
 
         

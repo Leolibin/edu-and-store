@@ -6,7 +6,7 @@
   <head>
     
     <title>My JSP 'login.jsp' starting page</title>
-    
+     <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -15,10 +15,11 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
   </head>
   
   <body style="font-size: 30px;">
+  
+  <textarea id="editor1" name="editor1">
   	<form action="login.do" method="post" accept-charset="utf-8"  onsubmit="document.charset='utf-8';" >
   		<fieldset>
   			<legend>登录</legend>
@@ -37,6 +38,8 @@
   			<img src="checkcode" border="1" onclick="this.src='checkcode?'+Math.random();"><br/>
 			<input type="submit" value="登录" />
 		</fieldset>
-  	</form> 
+  	</form>
+</textarea>
+<script type="text/javascript"> CKEDITOR.replace('editor1');</script>
   </body>
 </html>
