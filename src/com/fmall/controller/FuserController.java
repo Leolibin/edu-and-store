@@ -38,7 +38,7 @@ public String formTag(HttpSession session, HttpServletRequest request) {
     
 
 
-    //登陆验证
+    //登陆验证111
     @RequestMapping(value = "fuserlogin")
     public String login(String uId,String password,ModelMap map,HttpSession session){
         String url = (String)session.getAttribute("redirectUrl");
