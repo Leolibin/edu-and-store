@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-13, 10:44:01
+    Author     : 朱婷婷
+*/
+#mallPage #header {
+    margin-top: -30px;
+    width: auto;
+    margin-bottom: 0;
+    min-width: 990px;
+    background: #fff;
+}
+#header {
+    height: 122px;
+    margin-top: -26px!important;
+    background: #fff;
+    min-width: 990px;
+    width: auto!important;
+    position: relative;
+    z-index: 1000;
+}
+#content, #footer, #header, #page {
+    margin-left: auto;
+    margin-right: auto;
+}
+#mallLogo s {
+    position: absolute;
+    display: block;
+    top: 0;
+    cursor: pointer;
+}
+#mallLogo {
+    float: left;
+    z-index: 9;
+    /*padding-top: 23px;*/
+    width: 280px;
+    height: 64px;
+    line-height: 64px;
+    position: relative;
+}
+#mallSearch #mq {
+    color: #000;
+    margin: 0;
+    z-index: 2;
+    width: 297px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 3px 5px 5px;
+    outline: 0;
+    border: none;
+    font-weight: 900;
+    background: url(data:image/gif;base64,R0lGODlhAQADAJEAAObm5t3d3ff39wAAACH5BAAAAAAALAAAAAABAAMAAAICDFQAOw==) repeat-x;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#mallSearch {
+    float: right;
+    /*padding-top: 25px;*/
+    width: 390px;
+    overflow: hidden;
+}
+#mallSearch #mq, #mallSearch fieldset, .mallSearch-input {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.page-not-market #mq, .w1190 #mq {
+    width: 439px!important;
+}
+#mallSearch button, #tmallSearch button {
+    position: absolute;
+    z-index: 1;
+}
+#mallSearch button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 90px;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #FF0036;
+    height: 30px;
+    overflow: hidden;
+    font-family: '\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53";
+}
+.mallSearch-form {
+    border: solid #FF0036;
+    border-width: 3px 0 3px 3px;
+}
+fieldset, img {
+    border: 0;
+}
+legend {
+    display: none;
+    color: #000;
+}
+legend {
+    display: block;
+    display: none;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.mallSearch-input {
+    background: #fff;
+    height: 30px;
+}
+.s-combobox {
+    float: left;
+    height: 30px;
+    font-size: 12px;
+}
+.s-combobox .s-combobox-input-wrap {
+    position: relative;
+    height: 30px;
+    vertical-align: middle;
+}
+#mallSearch label {
+    color: #666;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    z-index: 1;
+}
+#mallSearch label, .mui-display-none, .mui-global-header-fixed .header-banner {
+    visibility: hidden;
+}
+legend {
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    -ms-overflow-style: scrollbar;
+}
+.headerLayout {
+    width: 990px;
+    padding-top: 26px;
+    margin: 0 auto;
+}
+#mallLogo a{
+    text-decoration: none;
+    color: #CD0000;
+    font-family: 微软雅黑;
+    font-size: 30px;
+}

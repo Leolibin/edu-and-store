@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-13, 15:31:30
+    Author     : 朱婷婷
+*/
+
+#adminHomeFrame_container{
+    width: 100%;
+    text-align: center;
+    /*background-color: #0066cc;*/
+
+}
+#adminHomeFrame_content{
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+}
+#adminHomeFrame_content #adminHomeFrame_content_left{
+    width: 15%;
+    float: left;
+    height: 300px;
+
+}
+#adminHomeFrame_content #adminHomeFrame_content_right{
+    width: 85%;
+    float: left;
+    height: 800px;
+}
+#adminHomeFrame_content_left #adminHomeFrame_content_left_content{
+    /*border: 1px #CCC solid;*/
+    height: 500px;
+    background-color: #000;
+}
+#adminHomeFrame_content_left_content ul li{
+    list-style: none;
+    color: #FFF;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #000;
+    padding-top: 10px;
+    /*border-top: 1px #CCC solid;*/
+}
+#adminHomeFrame_content_left_content ul li:hover{
+    background-color: #FF0000;
+}
+#adminHomeFrame_content_left_content ul li #adminHomeFrame_content_left_content_header:hover{
+    background-color: #000;
+}

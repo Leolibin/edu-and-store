@@ -19,23 +19,23 @@ public class checkcode extends HttpServlet {
 	public void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		/*
-		 * 绘图
+		 * 绘图。
 		 */
-		//step1内存影像对象画
+		//step1内存影像对象画部分
 		BufferedImage image = new BufferedImage(90,30,BufferedImage.TYPE_INT_RGB);
 		//step2获得画笔
 		Graphics g = image.getGraphics();
 		//step3给画笔设置颜色
 		g.setColor(new Color(255,255,255));
-		//step4给画布设置背景色
+		//step4给画布设置背景y颜色
 		g.fillRect(0, 0, 90, 30);
 		//step5,重新给画笔设置颜色
 		Random r = new Random();
 		g.setColor(new Color(r.nextInt(255),r.nextInt(255),r.nextInt(255)));
 		g.setFont(new Font(null,Font.ITALIC,24));
-		//step6,生成一个随机数(验证码)
+		//step6,生成一个随机数字(验证码)
 		String number = getNumber();
-		//将验证码绑定到session对象里面，用来验
+		//将验证码绑定到session对象里面，用来验证
 		HttpSession session = request.getSession();
 		session.setAttribute("number", number);
 		//将验证码绘制成图片

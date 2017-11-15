@@ -1,0 +1,184 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-6-13, 14:11:47
+    Author     : zxa
+*/
+
+
+a{
+    text-decoration: none;
+}
+
+
+.show{
+    width: 1349xp;
+    height: 460px;
+}
+
+
+.lunbo{
+    float: left;
+    background-color: #ff3333;
+    margin-top: -2px;
+    margin-left: 237px;
+}
+.right{
+    width: 100px;
+    height: 714px;
+    float: left;
+}
+.slider-panel image{
+    height: 398px;
+    width: 714px;
+}
+
+
+
+
+
+
+ * { 
+ padding: 0px; 
+ margin: 0px; 
+ } 
+ a { 
+ text-decoration: none; 
+ } 
+ ul { 
+ list-style: outside none none; 
+ } 
+  .slider-panel img, .slider-extra { 
+ width: 714px; 
+ height: 398px; 
+ } 
+ .slider { 
+     float: left;
+ text-align: center; 
+ position: relative; 
+ } 
+ .slider-panel, .slider-nav, .slider-pre, .slider-next { 
+ position: absolute; 
+ z-index: 8; 
+ } 
+ .slider-panel { 
+ position: absolute; 
+ } 
+ .slider-panel img { 
+ border: none; 
+ } 
+ .slider-extra { 
+ position: relative; 
+ } 
+ .slider-nav { 
+ position: absolute; 
+ left: 50%; 
+ bottom: 4px; 
+ } 
+ .slider-nav li { 
+ background: #3e3e3e; 
+ border-radius: 50%; 
+ color: #fff; 
+ cursor: pointer; 
+ margin: 0 2px; 
+ overflow: hidden; 
+ text-align: center; 
+ display: inline-block; 
+ height: 18px; 
+ line-height: 18px; 
+ width: 18px; 
+ } 
+ .slider-nav .slider-item-selected { 
+ background: blue; 
+ } 
+ .slider-page a{ 
+ background: rgba(0, 0, 0, 0.2); 
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000); 
+ color: #fff; 
+ text-align: center; 
+ display: block; 
+ font-family: "simsun"; 
+ font-size: 22px; 
+ width: 28px; 
+ height: 62px; 
+ line-height: 62px; 
+ margin-top: -31px; 
+ position: absolute; 
+ top: 50%; 
+ } 
+ .slider-page a:HOVER { 
+ background: rgba(0, 0, 0, 0.4); 
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000); 
+ } 
+ .slider-next { 
+ left: 100%; 
+ margin-left: -28px; 
+ } 
+ 
+ 
+ 
+ .newList{
+     
+     height: 600px;
+     margin-left: 50px;
+     background-color: #009cda;
+     padding: 10px;
+     width: 1191px;
+ }
+ .newList .onepro{
+     float: left;
+     width: 238px;
+     height: 374px;
+ }
+ .newList .onepro a{
+         display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9c9c9c;
+    background: #fff;
+    text-decoration: none;
+    width: 217px;
+    height: 353px;
+    padding: 10px;
+    zoom: 1;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    position: relative;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    cursor: pointer;
+ }
+ .newList a img{
+     width: 218px;
+     height: 218px;
+     
+ }
+ .protitle{
+     
+     width: 218px;
+     height: 81px;
+ }
+ .proPrice{
+     
+     width: 218px;
+     height: 33px;
+ }
+ .proPrice .price{
+     width: 114px;
+     height: 29px;
+ }
+  .proPrice .saled{
+     width: 80px;
+     height: 29px;
+ }
+ .buying{
+     display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9c9c9c;
+    width: 218px;
+    height: 36px;
+ }
